@@ -1,5 +1,6 @@
 import Note from "./Note";
 import AddNote from "./AddNote";
+import { MdIconName } from 'react-icons/md';
 
 const NotesList = ({ notes, handleAddNote, handleDeleteNote }) => {
   

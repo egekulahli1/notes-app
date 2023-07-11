@@ -1,6 +1,7 @@
 import { MdDeleteForever } from "react-icons/md";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { MdIconName } from 'react-icons/md';
 
 const Note = ({ id, text, date, handleDeleteNote }) => {
   const handleDeteleNote = () => {

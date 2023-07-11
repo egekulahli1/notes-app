@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { MdIconName } from 'react-icons/md';
+
 
 const AddNote = ({ handleAddNote }) => {
   const showToastMessage = () => {
