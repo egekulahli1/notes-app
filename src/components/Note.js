@@ -11,10 +11,10 @@ const Note = ({ id, text, date, handleDeleteNote }) => {
     });
   };
   return (
-    <div>
-      <div className="note" >
-        <span rows='8'
-				cols='10'>{text}</span>
+    <div> 
+      <div className="note"  rows='8'
+				cols='10' >
+        <span>{text}</span>
         <div className="note-footer">
           <small>{date}</small>
           <MdDeleteForever
