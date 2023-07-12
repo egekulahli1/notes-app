@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { MdIconName } from 'react-icons/md';
+
 
 
 const AddNote = ({ handleAddNote }) => {
@@ -29,6 +29,7 @@ const AddNote = ({ handleAddNote }) => {
   };
 
   return (
+    <div>
     <div className="note new">
       <textarea
         rows="8"
@@ -43,6 +44,8 @@ const AddNote = ({ handleAddNote }) => {
           Save
         </button>
       </div>
+    </div>
+    <ToastContainer />
     </div>
   );
 };

@@ -3,7 +3,8 @@ import { nanoid } from 'nanoid';
 import NotesList from './components/NotesList';
 import Search from './components/Search';
 import Header from './components/Header';
-import { MdIconName } from 'react-icons/md';
+
+import "react-toastify/dist/ReactToastify.css";
 
 // Function to load saved notes from localStorage or return an empty array
 const getSavedNotes = () => {

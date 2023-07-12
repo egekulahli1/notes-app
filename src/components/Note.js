@@ -1,14 +1,18 @@
 import { MdDeleteForever } from "react-icons/md";
-import { toast, ToastContainer } from "react-toastify";
+import { toast, ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { MdIconName } from 'react-icons/md';
+
 
 const Note = ({ id, text, date, handleDeleteNote }) => {
-  const handleDeteleNote = () => {
-    handleDeleteNote(id);
+  const showToastMessage = () => {
     toast.error("Note deleted succesfully", {
       position: toast.POSITION.TOP_RIGHT,
     });
+  };
+  const handleDeteleNote = () => {
+    console.log('toastify nerede');
+    handleDeleteNote(id);
+    showToastMessage();
   };
   return (
     <div> 
@@ -23,6 +27,7 @@ const Note = ({ id, text, date, handleDeleteNote }) => {
             size="1.3em"
           />
         </div>
+        
       </div>
       <ToastContainer />
     </div>
